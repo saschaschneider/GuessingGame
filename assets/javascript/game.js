@@ -153,7 +153,7 @@ $("#buttonHold").on("click", function() {
 
    
      if (gameOver === true) { 
-        $(".randomNumber").append(" Ohhhh nooo! " + " is greater than " + gameNumber + " so you lost!");
+        $(".randomNumber").append("You stopped too early, you could have hit more times - You Lost");
     }
     else if (win === true) {
         $(".randomNumber").append("Winner, Winner chicken dinner");
