@@ -13,6 +13,7 @@ var maxMoves; // this will hold the max moves possible before losing the game
 var clickCounterHit;
 var clickCounterHold;
 var cardSrcLink; // generates the link to the right card played
+var movesLeft; 
 
 //-------------END OF DEFINING VARIABLES ------------------------// 
 
@@ -136,9 +137,15 @@ $("#buttonHit").on("click", function() {
   }        
     }) // closing function
 
+movesLeft = maxMoves - clickCounterHit;
+console.log("how many clicks left " + movesLeft)
+
 clickCounterHold = 0 
 $("#buttonHold").on("click", function() {
     clickCounterHold = clickCounterHold + 1;
+
+	movesLeft = maxMoves - clickCounterHit;
+	console.log("how many clicks left " + movesLeft)
 
   	gameOver = clickCounterHit > maxMoves;
   	win = clickCounterHit === maxMoves;
@@ -154,7 +161,7 @@ $("#buttonHold").on("click", function() {
 
    
      if (gameOver === true) { 
-        $(".randomNumber").html("You stopped too early, you could have hit more times - You Lost");
+        $(".randomNumber").html("Too early, you could have hit "+movesLeft+" more times - You Lost");
     }
     else if (win === true) {
         $(".randomNumber").html("Winner, Winner Chicken Dinner");
