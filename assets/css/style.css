@@ -1,0 +1,66 @@
+#image1 {
+ height: 20rem;
+}
+#image2 {
+ height: 20rem;
+}
+#image3 {
+ height: 20rem;
+}
+#image4 {
+ height: 20rem;
+}
+#image5 {
+ height: 20rem;
+}
+#image6 {
+ height: 20rem;
+}
+#image7 {
+ height: 20rem;
+}
+#image8 {
+ height: 20rem;
+}
+#image9 {
+ height: 20rem;
+}
+
+#image10 {
+ height: 20rem;
+}
+
+
+@media (max-width: 900px) {
+#image1 {
+ height: 2rem;
+}
+#image2 {
+ height: 12rem;
+}
+#image3 {
+ height: 12rem;
+}
+#image4 {
+ height: 12rem;
+}
+#image5 {
+ height: 12rem;
+}
+#image6 {
+ height: 12rem;
+}
+#image7 {
+height: 12rem;
+}
+#image8 {
+ height: 12rem;
+}
+#image9 {
+ height: 12rem;
+}
+
+#image10 {
+ height: 12rem;
+}
+}
