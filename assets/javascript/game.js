@@ -140,9 +140,10 @@ clickCounterHold = 0
 $("#buttonHold").on("click", function() {
     clickCounterHold = clickCounterHold + 1;
 
-  	gameOver = clickCounterHold > maxMoves;
-  	win = clickCounterHold === maxMoves;
-  	gameOver = clickCounterHold < maxMoves;
+  	gameOver = clickCounterHit > maxMoves;
+  	win = clickCounterHit === maxMoves;
+  	gameOver = clickCounterHit < maxMoves;
+
   	 $(".randomNumber").append(" " + clickCounterHold);
   	 console.log("Hold Clicks " + clickCounterHold);
 
@@ -156,7 +157,7 @@ $("#buttonHold").on("click", function() {
         $(".randomNumber").html("You stopped too early, you could have hit more times - You Lost");
     }
     else if (win === true) {
-        $(".randomNumber").append("Winner, Winner chicken dinner");
+        $(".randomNumber").html("Winner, Winner Chicken Dinner");
     }
     }) // closing function
 
